@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Developer mostafa fahmi-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>الاول الثانوي </title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <link rel="stylesheet" href="../footer.css" />
+
+  <link rel="stylesheet" href="../loding.css" />
+
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var audio = new Audio("../mp3/1s.mp3");
+
+      window.onload = function () {
+        audio.play();
+      };
+      audio.loop = false;
+
+      document.body.addEventListener(
+        "click",
+        function () {
+          audio.play();
+        },
+        {once: true},
+      );
+    });
+  </script>
+
+  <div id="loading" class="loading">
+    <h1>جاري التحميل</h1>
+  </div>
+
+  <nav>
+    <div class="navbar">
+      <i class="bx bx-menu"></i>
+      <div class="logo"><a href="#"> الصف الاول الثانوي</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"> الصف الاول الثانوي </span>
+          <i class="bx bx-x"></i>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">HOME</a></li>
+          <li>
+            <a href="#"> الصف الاول الثانوي</a>
+            <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="../sanoy1/ar_1_1s.html">اللغه العربيه</a></li>
+              <li><a href="../sanoy1/ar_2_1s.html">اللغه الانجليزي</a></li>
+              <li><a href="../sanoy1/ar_3_1s.html">علوم المتكاملة</a></li>
+              <li><a href="../sanoy1/ar_4_1s.html">احياء </a></li>
+              <li><a href="../sanoy1/ar_5_1s.html">رياضيات</a></li>
+              <li><a href="../sanoy1/ar_6_1s.html">تاريخ</a></li>
+              <li><a href="../sanoy1/ar_7_1s.html">الفلسفة والمنطق</a></li>
+
+              <li class="more">
+                <span><a href="#">More</a>
+                  <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">الثانويه</a>
+            <i class="bx bxs-chevron-down js-arrow arrow"></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="../secondary/2s.html">الصف الثاني الثانوي</a></li>
+              <!-- <li><a href="secondary/3s.html"> الصف الثالث الثانوي</a></li>-->
+              <li><a href="#">لينك صفحت الوزارة</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Ai.html">AI CHAT</a></li>
+          <li><a href="developer.html">DEVELOPER Wep</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="m1">
+    <h2>مرحباً بك في صفحتنا التعليمية! 🎉</h2>
+    <br />
+    <h3>
+      سعيدون بانضمامك إلينا في رحلتك الدراسية، هنا ستجد كل ما تحتاجه لتسهيل
+      فهم منهج الصف الأول الإعدادي بطريقة بسيطة وممتعة. 📚✨
+    </h3>
+    <br />
+    <h3>للبدء، اضغط على الثلاثة خطوط ☰ الموجودة في جانب الشاشة، ثم:</h3>
+    <br />
+    <h4>1. اختر الصف الأول الإعدادي. 🏫</h4>
+    <br />
+
+    <h4>2. حدد المادة التي تريدها من القائمة المتاحة. 📝</h4>
+    <br />
+    <h4>
+      💡 بسهولة ويسر، ستجد كل ما تحتاجه لتفوقك! 🚀 نتمنى لك تجربة تعليمية
+      مفيدة وممتعة! 😊
+    </h4>
+  </div>
+
+  <div class="copyright-bar">
+    <p>&copy; Developer: mostafa_mohamed_fahmi</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

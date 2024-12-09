@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ai chat</title>
+  <!-- Linking Google Fonts For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- استدعاء الملف الأول -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- استدعاء الملف الثاني -->
+  <link rel="stylesheet" href="Ai.css">
+
+  <!--استدعاء الملف  الثاني--> 
+ <link rel="stylesheet"href="welcome.css"> 
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+</head>
+</head>
+
+<body>
+<div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <img src="welcome2.png" alt="صورة ترحيب" />
+    <!-- استبدل "welcome.jpg" باسم ملف الصورة الخاص بك -->
+    <button class="close-btn" onclick="closePopup()">إغلاق</button>
+  </div>
+  <nav>
+    <div class="navbar">
+      <i class="bx bx-menu"></i>
+      <div class="logo"><a href="#">Ai chat</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Ai chat</span>
+          <i class="bx bx-x"></i>
+        </div>
+        <ul class="links">
+          <li><a href="../index.html">HOME</a></li>
+          <li>
+            <a href="#">الاعدادي</a>
+            <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="../preparatory/1a.html">الصف الاول الاعدادي</a></li>
+              <li><a href="../preparatory/2a.html">الصف الثاني الاعدادي</a></li>
+              <li><a href="../preparatory/3a.html">الصف الثالث الاعدادي</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                  <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">الثانوية</a>
+            <i class="bx bxs-chevron-down js-arrow arrow"></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="../secondary/1s.html">الصف الاول الثانوي</a></li>
+              <li><a href="../secondary/2s.html">الصف الثاني الثانوي</a></li>
+            <!--  <li><a href="../secondary/3s.html">الصف الثالث الثانوي</a></li>-->
+              <li><a href="#">لينك صفحت الوزارة</a></li>
+            </ul>
+          </li>
+          <li><a href="developer.html">DEVELOPER PROJECT</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <!-- Header Greetings -->
+    <h1 class="title">Hello, there</h1>
+    <p class="subtitle">How can I help you today?</p>
+
+    <!-- Suggestion list -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Help me plan a game night with my 5 best friends for under $100.</h4>
+        <span class="icon material-symbols-rounded">draw</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">What are the best tips to improve my public speaking skills?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Can you help me find the latest news on web development?</h4>
+        <span class="icon material-symbols-rounded">explore</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Write JavaScript code to sum all elements in an array.</h4>
+        <span class="icon material-symbols-rounded">code</span>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Chat List / Container -->
+  <div class="chat-list"></div>
+
+  <!-- Typing Area -->
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      This artificial intelligence is designed for educational purposes and API《Google Gemini》 Developer mostafa
+    </p>
+  </div>
+
+  <script src="Ai.js"></script>
+  <script src="script.js"></script>
+  <script src="welcome.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+height {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("star2.png");
+}
+
+.content {
+  padding: 20px;
+  background-color: #142133; /* لون خلفية المحتوى */
+  min-height: 100vh; /* لجعل المحتوى يغطي كامل ارتفاع الشاشة */
+  padding-bottom: 50px; /* مساحة أسفل المحتوى لتجنب تداخل النص مع الشريط */
+}
+
+.copyright-bar {
+  background-image: url("star2.png");
+
+  background-color: #142133; /* لون خلفية الشريط */
+  color: #a448ab; /* لون النص */
+  text-align: center; /* محاذاة النص في المنتصف */
+  padding: 10px 0; /* مساحة داخلية */
+  position: fixed; /* اجعل الشريط ثابت */
+  bottom: 0; /* اجعل الشريط في الأسفل */
+  left: 0; /* اجعل الشريط يبدأ من الجهة اليسرى */
+  right: 0; /* اجعل الشريط يمتد إلى الجهة اليمنى */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+}
+
+.copyright-bar p {
+  margin: 0; /* إزالة الهوامش */
+  font-size: 14px; /* حجم الخط */
+}

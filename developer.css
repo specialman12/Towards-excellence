@@ -1,0 +1,83 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #142133;
+  background-image: url("star2.png");
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: #dbb884;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#dbb884;
+}
+.container {
+  display: flex;
+  gap: 22px;
+  max-width: 500px;
+  width: 100%;
+  background: #142133;
+  border-radius: 22px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background-image: url("star2.png");
+}
+.container .card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 22px;
+  background: #dbb884;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background-image: url("star2.png");
+}
+.card .image {
+  height: 300px;
+  width: 300px;
+  padding: 4px;
+  background: #dbb884;
+  border-radius: 50%;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #142133;
+}
+.card h2 {
+  margin-top: 25px;
+  color: #142133;
+  font-size: 22px;
+  font-weight: 600;
+}
+.card p {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #142133;
+  text-align: center;
+}
