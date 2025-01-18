@@ -30,14 +30,15 @@
     };
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
 
-  <link rel="stylesheet" href="star.css" />
+  <link rel="stylesheet" href="../M.css" />
 
-  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="../footer.css" />
 
-  <link rel="stylesheet" href="welcome.css" />
-  <link rel="stylesheet" href="loding.css" />
+  <link rel="stylesheet" href="../welcome.css" />
+  <link rel="stylesheet" href="../home.css" />
+  <link rel="stylesheet" href= "../loding.css"/>
 
   <!--icons-- Boxicons CDN Link-->
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
@@ -45,10 +46,7 @@
 </head>
 
 <body>
-  <div id="loading" class="loading">
-    <h1>جاري التحميل</h1>
-  </div>
-
+  
   <div class="overlay" id="overlay"></div>
   <div class="popup" id="popup">
     <img src="welcome.png" alt="صورة ترحيب" />
@@ -62,7 +60,7 @@
     <button class="close-btn" onclick="closePopup()">إغلاق</button>
   </div>
 
-  <div class="conainar"></div>
+  
 
   <nav>
     <div class="navbar">
@@ -80,13 +78,13 @@
             <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
             <ul class="htmlCss-sub-menu sub-menu">
               <li>
-                <a href="preparatory/1a.html">الصف الاول الاعدادي</a>
+                <a href="../preparatory/1a.html">الصف الاول الاعدادي</a>
               </li>
               <li>
-                <a href="preparatory/2a.html">الصف الثاني الاعدادي</a>
+                <a href="../preparatory/2a.html">الصف الثاني الاعدادي</a>
               </li>
               <li>
-                <a href="preparatory/3a.html">الصف الثالث الاعدادي</a>
+                <a href="../preparatory/3a.html">الصف الثالث الاعدادي</a>
               </li>
               <li class="more">
                 <span><a href="#">More</a>
@@ -104,21 +102,22 @@
             <a href="#">الثانوية</a>
             <i class="bx bxs-chevron-down js-arrow arrow"></i>
             <ul class="js-sub-menu sub-menu">
-              <li><a href="secondary/1s.html">الصف الاول الثانوي</a></li>
+              <li><a href="../secondary/1s.html">الصف الاول الثانوي</a></li>
               <li>
-                <a href="secondary/2s.html">الصف الثاني الثانوي</a>
+                <a href="../secondary/2s.html">الصف الثاني الثانوي</a>
               </li>
               <!--<li>
-                <a href="secondary/3s.html">الصف الثالث الثانوي</a>
+                <a href="../secondary/3s.html">الصف الثالث الثانوي</a>
               </li>-->
               <li><a href="#">لينك صفحت الوزارة</a></li>
             </ul>
           </li>
           <li><a href="Ai.html">AI CHAT</a></li>
           <li><a href="developer.html">DEVELOPER PROJECT</a></li>
-
-<li><a href="https://www.mediafire.com/file/w74j7624a1tb6h3/Towards_excellence.apk/file">التطبيق الخاص بنا</a></li>
-        </ul>
+        
+        <li><a href="https://www.mediafire.com/file/w74j7624a1tb6h3/Towards_excellence.apk/file">التطبيق الخاص بنا</a></li>
+            </ul>
+      
       </div>
       <div class="search-box">
         <i class="bx bx-search"></i>
@@ -129,11 +128,13 @@
     </div>
   </nav>
 
-  <div class="welcome1">
-    <h2>✨ مرحبًا بكم في Toward Excellence ✨</h2>
-  </div>
-  <div class="welcome2">
-    <p>
+   <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>اهلا بك في المنصه التعليمية <br /> Towards excellence</h2>
+            
+<p>
       🎉 يسعدنا انضمامكم إلى منصتنا Toward Excellence!
       <br />
       نحن هنا لنكون شريككم
@@ -151,15 +152,27 @@
       وأبناء وطننا. 🌟 شكرًا لاختياركم Toward Excellence، ونتمنى لكم رحلة
       تعليمية مميزة وسهلة الاستخدام! 🚀
     </p>
-  </div>
+          
 
-
+            
+          </div>
+          <div class="buttons">
+  <button class="btn" onclick="window.location.href='https://www.mediafire.com/file/w74j7624a1tb6h3/Towards_excellence.apk/file';">Download  app </button>
+          </div>
+          <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+</main>
 
   <div class="copyright-bar">
     <p>&copy; Developer: mostafa_mohamed_fahmi</p>
   </div>
 
-  <script src="script.js">
+  <script src="../script.js">
 
 
     // وظيفة لإظهار عنصر التحميل
@@ -179,11 +192,11 @@
 
 
 
-  <script src="welcome.js"></script>
+  <script src="../welcome.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var audio = new Audio("mp3/welcome.mp3");
+      var audio = new Audio("../mp3/welcome.mp3");
 
 
 
@@ -197,7 +210,5 @@
     });
   </script>
 </body>
-
-</html>
 
 </html>
