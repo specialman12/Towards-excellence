@@ -4,40 +4,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Towards excellence</title>
-  <script>
+  <title>Towards excellence </title>
 
-    /* document.addEventListener("DOMContentLoaded", function () {
-       var audio = new Audio("welcome.mp3");
- 
-       window.onload = function () {
-         audio.play();
-       };
-       audio.loop = false;
- 
-       document.body.addEventListener(
-         "click",
-         function () {
-           audio.play();
-         },
-         {once: true},
-       );
-     });
- */
-
-    window.onload = function () {
-      alert("اهلا بك معنا Developer Wep : Mostafa mohammed fahmi ");
-    };
-  </script>
 
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="star.css" />
+  <link rel="stylesheet" href="M.css" />
 
   <link rel="stylesheet" href="footer.css" />
 
   <link rel="stylesheet" href="welcome.css" />
-  <link rel="stylesheet" href="loding.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href= "loding.css"/>
 
   <!--icons-- Boxicons CDN Link-->
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
@@ -45,10 +23,7 @@
 </head>
 
 <body>
-  <div id="loading" class="loading">
-    <h1>جاري التحميل</h1>
-  </div>
-
+  
   <div class="overlay" id="overlay"></div>
   <div class="popup" id="popup">
     <img src="welcome.png" alt="صورة ترحيب" />
@@ -62,7 +37,7 @@
     <button class="close-btn" onclick="closePopup()">إغلاق</button>
   </div>
 
-  <div class="conainar"></div>
+  
 
   <nav>
     <div class="navbar">
@@ -130,11 +105,13 @@
     </div>
   </nav>
 
-  <div class="welcome1">
-    <h2>✨ مرحبًا بكم في Toward Excellence ✨</h2>
-  </div>
-  <div class="welcome2">
-    <p>
+   <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>اهلا بك في المنصه التعليمية <br /> Towards excellence</h2>
+            
+<p>
       🎉 يسعدنا انضمامكم إلى منصتنا Toward Excellence!
       <br />
       نحن هنا لنكون شريككم
@@ -152,9 +129,21 @@
       وأبناء وطننا. 🌟 شكرًا لاختياركم Toward Excellence، ونتمنى لكم رحلة
       تعليمية مميزة وسهلة الاستخدام! 🚀
     </p>
-  </div>
+          
 
-
+            
+          </div>
+          <div class="buttons">
+  <button class="btn" onclick="window.location.href='https://www.mediafire.com/file/w74j7624a1tb6h3/Towards_excellence.apk/file';">Download  app </button>
+          </div>
+          <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+</main>
 
   <div class="copyright-bar">
     <p>&copy; Developer: mostafa_mohamed_fahmi</p>
@@ -184,7 +173,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var audio = new Audio("../mp3/welcome.mp3");
+      var audio = new Audio("../welcome.mp3");
 
 
 
@@ -198,7 +187,5 @@
     });
   </script>
 </body>
-
-</html>
 
 </html>
